@@ -1,0 +1,59 @@
+experiment:
+  output_dir: /cluster/home/llingsch/SAM/StNN/output/rebuttal_runs
+  run_name: duffing_mlp
+  seed: 42
+  device: cuda
+system:
+  name: duffing
+  params:
+    alpha: -1.0
+    beta: 1.0
+    delta: 0.2
+dataset:
+  t_span:
+  - 0.0
+  - 20.0
+  dt: 0.05
+  train_trajectories: 1800
+  val_trajectories: 240
+  test_trajectories: 240
+  cache_path: /cluster/home/llingsch/SAM/StNN/output/datasets/duffing_seed42.npz
+model:
+  type: mlp
+  mlp:
+    hidden_dims:
+    - 512
+    - 512
+    - 512
+    dropout: 0.02
+    residual_update: true
+    use_input_layernorm: false
+    residual_scale_init: 2.0
+training:
+  epochs: 140
+  batch_size: 48
+  lr: 0.0007
+  weight_decay: 0.0001
+  warmup_fraction: 0.05
+  grad_clip_norm: 1.0
+  rollout_steps: 14
+  rollout_loss_weight: 0.9
+  one_step_loss_weight: 1.0
+  reg_loss_weight: 0.0
+  teacher_forcing_start: 1.0
+  teacher_forcing_end: 0.15
+  eval_every: 5
+  val_batch_size: 4096
+  checkpoint_metric: rollout_rmse_h120
+  num_workers: 0
+evaluation:
+  rollout_horizons:
+  - 40
+  - 120
+  - 240
+  num_rollout_samples: 96
+  test_rollout_samples: 128
+  divergence_threshold: 1.5
+  save_plots: true
+  plot_samples: 6
+  eval_batch_size: 4096

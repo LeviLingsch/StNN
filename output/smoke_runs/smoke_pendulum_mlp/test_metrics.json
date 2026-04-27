@@ -1,0 +1,17 @@
+{
+  "test_one_step_mse": 0.0036771022714674473,
+  "test_rollout_rmse_h10": 0.36472323536872864,
+  "test_rollout_mae_h10": 0.27366921305656433,
+  "test_rollout_nrmse_h10": 0.18970584869384766,
+  "test_rollout_rmse_h20": 0.7042430639266968,
+  "test_rollout_mae_h20": 0.5144553780555725,
+  "test_rollout_nrmse_h20": 0.366302490234375,
+  "test_rollout_rmse_h30": 1.1074674129486084,
+  "test_rollout_mae_h30": 0.7906837463378906,
+  "test_rollout_nrmse_h30": 0.5760341882705688,
+  "test_divergence_step_mean": 20.5,
+  "test_divergence_step_std": 6.2048368229954285,
+  "test_rollout_samples": 8.0,
+  "wall_time_seconds": 1.2167513370513916,
+  "trainable_parameters": 4486.0
+}

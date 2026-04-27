@@ -1,0 +1,10 @@
+job_id,config,seed_override
+64482051,pendulum_stnn.yaml,config_default
+64482052,pendulum_mlp.yaml,config_default
+64482053,pendulum_neural_ode.yaml,config_default
+64482054,duffing_stnn.yaml,config_default
+64482055,duffing_mlp.yaml,config_default
+64482056,duffing_neural_ode.yaml,config_default
+64482057,forced_duffing_stnn.yaml,config_default
+64482058,forced_duffing_mlp.yaml,config_default
+64482059,forced_duffing_neural_ode.yaml,config_default

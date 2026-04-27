@@ -1,0 +1,153 @@
+Run directory: /cluster/home/llingsch/SAM/StNN/output/rebuttal_runs/duffing_stnn
+Run name: duffing_stnn
+Device: cuda
+System: duffing | state_dim=2
+Model type: stnn
+Trainable parameters: 13,329
+Epoch 001/140 | Train: 14.178378 | One-step: 7.603868
+Epoch 002/140 | Train: 2.014181 | One-step: 1.078168
+Epoch 003/140 | Train: 0.015728 | One-step: 0.008530
+Epoch 004/140 | Train: 0.005072 | One-step: 0.002748
+Epoch 005/140 | Train: 0.006630 | One-step: 0.003581
+Epoch 006/140 | Train: 0.007632 | One-step: 0.004086
+Epoch 007/140 | Train: 0.007010 | One-step: 0.003735
+Epoch 008/140 | Train: 0.005744 | One-step: 0.002942
+Epoch 009/140 | Train: 0.007278 | One-step: 0.003811
+Epoch 010/140 | Train: 0.008348 | One-step: 0.004159
+Epoch 011/140 | Train: 0.006497 | One-step: 0.003355
+Epoch 012/140 | Train: 0.007195 | One-step: 0.003600
+Epoch 013/140 | Train: 0.008292 | One-step: 0.004188
+Epoch 014/140 | Train: 0.007372 | One-step: 0.003642
+Epoch 015/140 | Train: 0.004844 | One-step: 0.002422
+Epoch 016/140 | Train: 0.005851 | One-step: 0.002884
+Epoch 017/140 | Train: 0.005380 | One-step: 0.002693
+Epoch 018/140 | Train: 0.006770 | One-step: 0.003262
+Epoch 019/140 | Train: 0.005879 | One-step: 0.002979
+Epoch 020/140 | Train: 0.005209 | One-step: 0.002384 | Val one-step: 0.005315 | RMSE@40: 0.9490 | RMSE@120: 1.6109 | RMSE@240: 3.0095
+Epoch 021/140 | Train: 0.008558 | One-step: 0.003966
+Epoch 022/140 | Train: 0.006659 | One-step: 0.003134
+Epoch 023/140 | Train: 0.006272 | One-step: 0.002906
+Epoch 024/140 | Train: 0.005190 | One-step: 0.002320
+Epoch 025/140 | Train: 0.004526 | One-step: 0.002002
+Epoch 026/140 | Train: 0.004653 | One-step: 0.001973
+Epoch 027/140 | Train: 0.006040 | One-step: 0.002655
+Epoch 028/140 | Train: 0.004384 | One-step: 0.001989
+Epoch 029/140 | Train: 0.004671 | One-step: 0.002021
+Epoch 030/140 | Train: 0.005767 | One-step: 0.002597
+Epoch 031/140 | Train: 0.004992 | One-step: 0.002076
+Epoch 032/140 | Train: 0.004801 | One-step: 0.002033
+Epoch 033/140 | Train: 0.004450 | One-step: 0.001908
+Epoch 034/140 | Train: 0.004993 | One-step: 0.001944
+Epoch 035/140 | Train: 0.004567 | One-step: 0.001867
+Epoch 036/140 | Train: 0.005648 | One-step: 0.002374
+Epoch 037/140 | Train: 0.006601 | One-step: 0.002631
+Epoch 038/140 | Train: 0.005374 | One-step: 0.002194
+Epoch 039/140 | Train: 0.005255 | One-step: 0.002119
+Epoch 040/140 | Train: 0.004745 | One-step: 0.001881 | Val one-step: 0.002166 | RMSE@40: 0.6685 | RMSE@120: 1.2072 | RMSE@240: 1.2123
+Epoch 041/140 | Train: 0.004332 | One-step: 0.001583
+Epoch 042/140 | Train: 0.004019 | One-step: 0.001560
+Epoch 043/140 | Train: 0.004210 | One-step: 0.001630
+Epoch 044/140 | Train: 0.004111 | One-step: 0.001512
+Epoch 045/140 | Train: 0.003959 | One-step: 0.001449
+Epoch 046/140 | Train: 0.004055 | One-step: 0.001390
+Epoch 047/140 | Train: 0.003466 | One-step: 0.001418
+Epoch 048/140 | Train: 0.003291 | One-step: 0.001262
+Epoch 049/140 | Train: 0.003171 | One-step: 0.001121
+Epoch 050/140 | Train: 0.003684 | One-step: 0.001332
+Epoch 051/140 | Train: 0.004076 | One-step: 0.001488
+Epoch 052/140 | Train: 0.003906 | One-step: 0.001352
+Epoch 053/140 | Train: 0.005387 | One-step: 0.001890
+Epoch 054/140 | Train: 0.003938 | One-step: 0.001294
+Epoch 055/140 | Train: 0.004514 | One-step: 0.001497
+Epoch 056/140 | Train: 0.003705 | One-step: 0.001217
+Epoch 057/140 | Train: 0.004440 | One-step: 0.001609
+Epoch 058/140 | Train: 0.003807 | One-step: 0.001277
+Epoch 059/140 | Train: 0.003654 | One-step: 0.001021
+Epoch 060/140 | Train: 0.002916 | One-step: 0.001004 | Val one-step: 0.000923 | RMSE@40: 0.5128 | RMSE@120: 0.8060 | RMSE@240: 1.0669
+Epoch 061/140 | Train: 0.003361 | One-step: 0.001191
+Epoch 062/140 | Train: 0.003304 | One-step: 0.001006
+Epoch 063/140 | Train: 0.004239 | One-step: 0.001350
+Epoch 064/140 | Train: 0.003005 | One-step: 0.000937
+Epoch 065/140 | Train: 0.003146 | One-step: 0.000968
+Epoch 066/140 | Train: 0.003521 | One-step: 0.001047
+Epoch 067/140 | Train: 0.003209 | One-step: 0.001003
+Epoch 068/140 | Train: 0.003838 | One-step: 0.001106
+Epoch 069/140 | Train: 0.003880 | One-step: 0.001211
+Epoch 070/140 | Train: 0.003752 | One-step: 0.001043
+Epoch 071/140 | Train: 0.003552 | One-step: 0.000962
+Epoch 072/140 | Train: 0.003584 | One-step: 0.000971
+Epoch 073/140 | Train: 0.003501 | One-step: 0.000944
+Epoch 074/140 | Train: 0.003464 | One-step: 0.000988
+Epoch 075/140 | Train: 0.003136 | One-step: 0.000782
+Epoch 076/140 | Train: 0.002872 | One-step: 0.000749
+Epoch 077/140 | Train: 0.003732 | One-step: 0.000921
+Epoch 078/140 | Train: 0.002960 | One-step: 0.000677
+Epoch 079/140 | Train: 0.003064 | One-step: 0.000743
+Epoch 080/140 | Train: 0.003527 | One-step: 0.000910 | Val one-step: 0.000845 | RMSE@40: 0.4021 | RMSE@120: 0.7363 | RMSE@240: 0.9294
+Epoch 081/140 | Train: 0.004128 | One-step: 0.000864
+Epoch 082/140 | Train: 0.003114 | One-step: 0.000796
+Epoch 083/140 | Train: 0.003299 | One-step: 0.000813
+Epoch 084/140 | Train: 0.003249 | One-step: 0.000795
+Epoch 085/140 | Train: 0.002811 | One-step: 0.000646
+Epoch 086/140 | Train: 0.003306 | One-step: 0.000700
+Epoch 087/140 | Train: 0.002691 | One-step: 0.000621
+Epoch 088/140 | Train: 0.003834 | One-step: 0.000858
+Epoch 089/140 | Train: 0.003124 | One-step: 0.000609
+Epoch 090/140 | Train: 0.003160 | One-step: 0.000683
+Epoch 091/140 | Train: 0.003579 | One-step: 0.000628
+Epoch 092/140 | Train: 0.003310 | One-step: 0.000686
+Epoch 093/140 | Train: 0.003577 | One-step: 0.000731
+Epoch 094/140 | Train: 0.002872 | One-step: 0.000673
+Epoch 095/140 | Train: 0.002709 | One-step: 0.000514
+Epoch 096/140 | Train: 0.003512 | One-step: 0.000632
+Epoch 097/140 | Train: 0.003826 | One-step: 0.000781
+Epoch 098/140 | Train: 0.004047 | One-step: 0.000786
+Epoch 099/140 | Train: 0.003251 | One-step: 0.000715
+Epoch 100/140 | Train: 0.003491 | One-step: 0.000598 | Val one-step: 0.000646 | RMSE@40: 0.3813 | RMSE@120: 0.6313 | RMSE@240: 0.7278
+Epoch 101/140 | Train: 0.003662 | One-step: 0.000666
+Epoch 102/140 | Train: 0.003554 | One-step: 0.000482
+Epoch 103/140 | Train: 0.003489 | One-step: 0.000598
+Epoch 104/140 | Train: 0.003366 | One-step: 0.000578
+Epoch 105/140 | Train: 0.003504 | One-step: 0.000621
+Epoch 106/140 | Train: 0.002863 | One-step: 0.000463
+Epoch 107/140 | Train: 0.003364 | One-step: 0.000552
+Epoch 108/140 | Train: 0.003698 | One-step: 0.000550
+Epoch 109/140 | Train: 0.003245 | One-step: 0.000522
+Epoch 110/140 | Train: 0.003484 | One-step: 0.000647
+Epoch 111/140 | Train: 0.003191 | One-step: 0.000530
+Epoch 112/140 | Train: 0.003753 | One-step: 0.000541
+Epoch 113/140 | Train: 0.003411 | One-step: 0.000481
+Epoch 114/140 | Train: 0.003762 | One-step: 0.000515
+Epoch 115/140 | Train: 0.003949 | One-step: 0.000670
+Epoch 116/140 | Train: 0.003599 | One-step: 0.000541
+Epoch 117/140 | Train: 0.004898 | One-step: 0.000749
+Epoch 118/140 | Train: 0.004618 | One-step: 0.000582
+Epoch 119/140 | Train: 0.004107 | One-step: 0.000545
+Epoch 120/140 | Train: 0.005052 | One-step: 0.000534 | Val one-step: 0.000599 | RMSE@40: 0.3111 | RMSE@120: 0.4886 | RMSE@240: 0.5703
+Epoch 121/140 | Train: 0.004134 | One-step: 0.000455
+Epoch 122/140 | Train: 0.004766 | One-step: 0.000606
+Epoch 123/140 | Train: 0.005823 | One-step: 0.000758
+Epoch 124/140 | Train: 0.005301 | One-step: 0.000652
+Epoch 125/140 | Train: 0.005306 | One-step: 0.000733
+Epoch 126/140 | Train: 0.004442 | One-step: 0.000653
+Epoch 127/140 | Train: 0.004906 | One-step: 0.000524
+Epoch 128/140 | Train: 0.004455 | One-step: 0.000543
+Epoch 129/140 | Train: 0.005667 | One-step: 0.000559
+Epoch 130/140 | Train: 0.005168 | One-step: 0.000619
+Epoch 131/140 | Train: 0.004714 | One-step: 0.000579
+Epoch 132/140 | Train: 0.005105 | One-step: 0.000554
+Epoch 133/140 | Train: 0.004740 | One-step: 0.000521
+Epoch 134/140 | Train: 0.006224 | One-step: 0.000702
+Epoch 135/140 | Train: 0.004749 | One-step: 0.000395
+Epoch 136/140 | Train: 0.006436 | One-step: 0.000569
+Epoch 137/140 | Train: 0.006296 | One-step: 0.000457
+Epoch 138/140 | Train: 0.006874 | One-step: 0.000581
+Epoch 139/140 | Train: 0.005724 | One-step: 0.000528
+Epoch 140/140 | Train: 0.007485 | One-step: 0.000578 | Val one-step: 0.000559 | RMSE@40: 0.2915 | RMSE@120: 0.4760 | RMSE@240: 0.6740
+Training complete.
+Best validation metric (rollout_rmse_h120): 0.475964
+Test one-step MSE: 0.000615
+Test RMSE@40: 0.318280
+Test RMSE@120: 0.511205
+Test RMSE@240: 0.684041
+Artifacts saved to: /cluster/home/llingsch/SAM/StNN/output/rebuttal_runs/duffing_stnn

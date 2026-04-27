@@ -1,0 +1,8 @@
+Many modules are hidden in this stack. Use "module --show_hidden spider SOFTWARE" if you are not able to find the required software
+
+The following have been reloaded with a version change:
+  1) gcc/13.2.0 => gcc/12.2.0     2) stack/2024-05 => stack/2024-06
+
+Many modules are hidden in this stack. Use "module --show_hidden spider SOFTWARE" if you are not able to find the required software
+/cluster/home/llingsch/SAM/StNN/stnn_bench/systems.py:8: UserWarning: A NumPy version >=1.22.4 and <2.3.0 is required for this version of SciPy (detected version 2.4.4)
+  from scipy.integrate import solve_ivp

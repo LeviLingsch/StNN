@@ -1,0 +1,52 @@
+experiment:
+  output_dir: /cluster/home/llingsch/SAM/StNN/output/smoke_runs
+  run_name: smoke_pendulum_neural_ode
+  seed: 7
+  device: cpu
+
+system:
+  name: damped_pendulum
+  params:
+    damping: 0.15
+    gravity_over_length: 1.0
+
+dataset:
+  t_span: [0.0, 4.0]
+  dt: 0.1
+  train_trajectories: 40
+  val_trajectories: 12
+  test_trajectories: 12
+
+model:
+  type: neural_ode
+  neural_ode:
+    hidden_dim: 64
+    num_layers: 2
+    dropout: 0.0
+
+training:
+  epochs: 2
+  batch_size: 8
+  lr: 0.001
+  weight_decay: 0.0001
+  warmup_fraction: 0.1
+  grad_clip_norm: 1.0
+  rollout_steps: 5
+  rollout_loss_weight: 0.5
+  one_step_loss_weight: 1.0
+  reg_loss_weight: 0.0
+  teacher_forcing_start: 1.0
+  teacher_forcing_end: 0.5
+  eval_every: 1
+  val_batch_size: 1024
+  checkpoint_metric: rollout_rmse_h20
+  num_workers: 0
+
+evaluation:
+  rollout_horizons: [10, 20, 30]
+  num_rollout_samples: 8
+  test_rollout_samples: 8
+  divergence_threshold: 1.5
+  save_plots: false
+  plot_samples: 2
+  eval_batch_size: 1024

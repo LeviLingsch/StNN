@@ -1,0 +1,56 @@
+experiment:
+  output_dir: /cluster/home/llingsch/SAM/StNN/output/rebuttal_runs
+  run_name: pendulum_mlp
+  seed: 42
+  device: cuda
+system:
+  name: damped_pendulum
+  params:
+    damping: 0.15
+    gravity_over_length: 1.0
+dataset:
+  t_span:
+  - 0.0
+  - 10.0
+  dt: 0.05
+  train_trajectories: 2500
+  val_trajectories: 300
+  test_trajectories: 300
+  cache_path: /cluster/home/llingsch/SAM/StNN/output/datasets/pendulum_seed42.npz
+model:
+  type: mlp
+  mlp:
+    hidden_dims:
+    - 32
+    - 49
+    - 32
+    dropout: 0.0
+    residual_update: true
+training:
+  epochs: 120
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  warmup_fraction: 0.05
+  grad_clip_norm: 1.0
+  rollout_steps: 12
+  rollout_loss_weight: 0.7
+  one_step_loss_weight: 1.0
+  reg_loss_weight: 0.0
+  teacher_forcing_start: 1.0
+  teacher_forcing_end: 0.2
+  eval_every: 40
+  val_batch_size: 4096
+  checkpoint_metric: rollout_rmse_h80
+  num_workers: 0
+evaluation:
+  rollout_horizons:
+  - 20
+  - 80
+  - 150
+  num_rollout_samples: 96
+  test_rollout_samples: 128
+  divergence_threshold: 1.5
+  save_plots: true
+  plot_samples: 6
+  eval_batch_size: 4096

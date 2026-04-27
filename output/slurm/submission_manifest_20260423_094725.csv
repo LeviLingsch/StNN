@@ -1,0 +1,3 @@
+job_id,config,seed_override
+64503237,pendulum_stnn.yaml,config_default
+64503239,pendulum_mlp.yaml,config_default

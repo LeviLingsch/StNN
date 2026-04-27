@@ -1,0 +1,57 @@
+experiment:
+  output_dir: /cluster/home/llingsch/SAM/StNN/output/smoke_runs
+  run_name: smoke_duffing_stnn
+  seed: 11
+  device: cpu
+
+system:
+  name: duffing
+  params:
+    alpha: -1.0
+    beta: 1.0
+    delta: 0.2
+
+dataset:
+  t_span: [0.0, 8.0]
+  dt: 0.1
+  train_trajectories: 80
+  val_trajectories: 20
+  test_trajectories: 20
+
+model:
+  type: stnn
+  stnn:
+    p: 16
+    post_hidden: 64
+    dropout: 0.02
+    residual_update: true
+    use_input_layernorm: false
+    use_output_layernorm: false
+    residual_scale_init: 2.0
+
+training:
+  epochs: 3
+  batch_size: 16
+  lr: 0.0008
+  weight_decay: 0.0001
+  warmup_fraction: 0.1
+  grad_clip_norm: 1.0
+  rollout_steps: 6
+  rollout_loss_weight: 0.8
+  one_step_loss_weight: 1.0
+  reg_loss_weight: 0.0002
+  teacher_forcing_start: 1.0
+  teacher_forcing_end: 0.4
+  eval_every: 1
+  val_batch_size: 1024
+  checkpoint_metric: rollout_rmse_h40
+  num_workers: 0
+
+evaluation:
+  rollout_horizons: [20, 40, 60]
+  num_rollout_samples: 12
+  test_rollout_samples: 12
+  divergence_threshold: 1.5
+  save_plots: false
+  plot_samples: 2
+  eval_batch_size: 1024

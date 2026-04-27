@@ -1,0 +1,61 @@
+experiment:
+  output_dir: /cluster/home/llingsch/SAM/StNN/output/rebuttal_runs
+  run_name: forced_duffing_neural_ode_stnn_field
+  seed: 42
+  device: cuda
+
+system:
+  name: forced_duffing
+  params:
+    alpha: -1.0
+    beta: 1.0
+    delta: 0.2
+    gamma: 0.3
+    omega: 1.2
+
+dataset:
+  t_span: [0.0, 20.0]
+  dt: 0.05
+  train_trajectories: 1800
+  val_trajectories: 240
+  test_trajectories: 240
+  cache_path: /cluster/home/llingsch/SAM/StNN/output/datasets/forced_duffing_seed42.npz
+
+model:
+  type: neural_ode
+  neural_ode:
+    field_type: stnn
+    stnn_p: 1024
+    stnn_post_hidden: 1024
+    stnn_use_input_layernorm: false
+    stnn_use_output_layernorm: false
+    dropout: 0.02
+    hidden_dim: 192
+    num_layers: 3
+
+training:
+  epochs: 120
+  batch_size: 48
+  lr: 0.0006
+  weight_decay: 0.0001
+  warmup_fraction: 0.05
+  grad_clip_norm: 1.0
+  rollout_steps: 12
+  rollout_loss_weight: 0.9
+  one_step_loss_weight: 1.0
+  reg_loss_weight: 0.0002
+  teacher_forcing_start: 1.0
+  teacher_forcing_end: 0.15
+  eval_every: 20
+  val_batch_size: 4096
+  checkpoint_metric: rollout_rmse_h120
+  num_workers: 0
+
+evaluation:
+  rollout_horizons: [40, 120, 240]
+  num_rollout_samples: 96
+  test_rollout_samples: 128
+  divergence_threshold: 1.5
+  save_plots: true
+  plot_samples: 6
+  eval_batch_size: 4096
